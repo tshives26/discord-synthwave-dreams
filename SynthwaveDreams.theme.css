@@ -1,0 +1,117 @@
+/**
+ * @name Synthwave Dreams
+ * @author SummitByte
+ * @version 1.0.0
+ * @description A retro-futuristic synthwave theme with vibrant neon colors, grid lines, and 80s aesthetic. Built on ClearVision framework.
+ * @source https://github.com/tshives26/discord-synthwave-dreams
+ * @website https://github.com/tshives26/discord-synthwave-dreams
+ */
+
+/* IMPORT CSS - Synthwave Dreams Framework */
+@import url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/main.css");
+@import url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/betterdiscord.css");
+
+/* SETTINGS - SYNTHWAVE CUSTOMIZATION */
+:root {
+  /* ACCENT COLORS - Synthwave Neon Palette */
+  --main-color: #ff00ff; /* Hot Magenta - main accent color [default: #ff00ff] */
+  --hover-color: #ff006e; /* Hot Pink - hover accent color [default: #ff006e] */
+  --success-color: #00ffff; /* Electric Cyan - positive accent color [default: #00ffff] */
+  --danger-color: #ff0080; /* Neon Pink - danger accent color [default: #ff0080] */
+  
+  /* STATUS COLORS - Neon Variants */
+  --online-color: #00ffff; /* Electric Cyan [default: #00ffff] */
+  --idle-color: #ffaa00; /* Neon Orange [default: #ffaa00] */
+  --dnd-color: #ff006e; /* Hot Pink [default: #ff006e] */
+  --streaming-color: #ff00ff; /* Hot Magenta [default: #ff00ff] */
+  --offline-color: #4a4a6e; /* Dark Purple Gray [default: #4a4a6e] */
+  
+  /* APP BACKGROUND - Synthwave Gradient */
+  --background-shading-percent: 100%; /* app background shading amount [default: 100%] */
+  --background-image: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/background-main.jpg"); /* app background image (link must be HTTPS) */
+  --background-position: center; /* app background position [default: center] */
+  --background-size: cover; /* app background size [default: cover] */
+  --background-attachment: fixed; /* app background attachment [default: fixed] */
+  --background-filter: saturate(1.3) brightness(0.85) contrast(1.2); /* synthwave filter effects */
+  
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/background-main.jpg"); /* user popout background image [default: var(--background-image)] */
+  --user-popout-position: var(--background-position); /* user popout position [default: var(--background-position)] */
+  --user-popout-size: var(--background-size); /* user popout size [default: var(--background-size)] */
+  --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+  --user-popout-filter: var(--background-filter); /* user popout background adjustments [default: var(--background-filter)] */
+  
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/background-main.jpg"); /* user modal background image [default: var(--background-image)] */
+  --user-modal-position: var(--background-position); /* user modal position [default: var(--background-position)] */
+  --user-modal-size: var(--background-size); /* user modal size [default: var(--background-size)] */
+  --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+  --user-modal-filter: var(--background-filter); /* user modal background adjustments [default: var(--background-filter)] */
+  
+  /* HOME ICON - Animated Synthwave GIF */
+  --home-icon: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/home-icon.gif"); /* home button animated icon - synthwave retro effect [default: animated GIF] */
+  --home-size: cover; /* home button icon size [default: cover] */
+  
+  /* FONTS */
+  --main-font: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* main font for app [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  
+  /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-text-default); /* channel text color [default: var(--interactive-text-default)] */
+  --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
+  --channel-hover: var(--interactive-text-hover); /* hovered channel text color [default: var(--interactive-text-hover)] */
+  --channel-selected: var(--interactive-text-active); /* selected channel text color [default: var(--interactive-text-active)] */
+  --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
+  --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
+  --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
+  
+  /* ACCESSIBILITY */
+  --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
+}
+
+/* THEME VARIANTS - Users can switch in Discord Settings > Appearance > Theme */
+/* LIGHT THEME - Synthwave (Brighter variant) */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: rgba(252, 252, 252, 0.3); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
+  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(252, 252, 252, 0.5)] */
+  --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.3)] */
+  --normal-text: #36363c; /* text color [default: #36363c] */
+  --muted-text: #75757e; /* muted text color [default: #75757e] */
+}
+
+/* DARK THEME - Synthwave (Standard Dark) */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.7); /* app background shading color - deep dark for neon glow [default: rgba(0, 0, 0, 0.7)] */
+  --card-shading: rgba(0, 0, 0, 0.5); /* cards background shading color [default: rgba(0, 0, 0, 0.5)] */
+  --popout-shading: rgba(0, 0, 0, 0.8); /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --modal-shading: rgba(0, 0, 0, 0.75); /* modals background shading color [default: rgba(0, 0, 0, 0.75)] */
+  --input-shading: rgba(0, 0, 0, 0.6); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --normal-text: #ffffff; /* text color - bright for readability [default: #ffffff] */
+  --muted-text: rgba(255, 255, 255, 0.75); /* muted text color [default: rgba(255, 255, 255, 0.75)] */
+}
+
+/* DARKER THEME - Deep Synthwave */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.85); /* app background shading color - deep dark [default: rgba(0, 0, 0, 0.85)] */
+  --card-shading: rgba(0, 0, 0, 0.6); /* cards background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --popout-shading: rgba(0, 0, 0, 0.9); /* popouts background shading color [default: rgba(0, 0, 0, 0.9)] */
+  --modal-shading: rgba(0, 0, 0, 0.85); /* modals background shading color [default: rgba(0, 0, 0, 0.85)] */
+  --input-shading: rgba(0, 0, 0, 0.7); /* inputs background shading color [default: rgba(0, 0, 0, 0.7)] */
+  --normal-text: #ffffff; /* text color - bright for readability [default: #ffffff] */
+  --muted-text: rgba(255, 255, 255, 0.8); /* muted text color [default: rgba(255, 255, 255, 0.8)] */
+}
+
+/* MIDNIGHT THEME - Ultra Dark Synthwave */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.95); /* app background shading color - ultra dark [default: rgba(0, 0, 0, 0.95)] */
+  --card-shading: rgba(0, 0, 0, 0.7); /* cards background shading color [default: rgba(0, 0, 0, 0.7)] */
+  --popout-shading: rgba(0, 0, 0, 0.98); /* popouts background shading color [default: rgba(0, 0, 0, 0.98)] */
+  --modal-shading: rgba(0, 0, 0, 0.95); /* modals background shading color [default: rgba(0, 0, 0, 0.95)] */
+  --input-shading: rgba(0, 0, 0, 0.8); /* inputs background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --normal-text: #ffffff; /* text color - bright for readability [default: #ffffff] */
+  --muted-text: rgba(255, 255, 255, 0.85); /* muted text color [default: rgba(255, 255, 255, 0.85)] */
+}
+
+/* ADD ADDITIONAL SYNTHWAVE CSS BELOW HERE */

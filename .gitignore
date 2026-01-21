@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# Editor files
+.vscode/
+.idea/
+*.log
+
+# Node modules (if using build tools)
+node_modules/
+dist/
+build/
+
+# Temporary files
+*.tmp
+.cache/
+
+# Documentation files (not for GitHub)
+GITHUB-PAGES-SETUP.md
+assets/README.md
+
+# Keep assets folder but ignore README
+assets/**
+!assets/.gitkeep
