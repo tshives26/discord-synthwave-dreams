@@ -28,28 +28,28 @@
   
   /* APP BACKGROUND - Synthwave Gradient */
   --background-shading-percent: 100%; /* app background shading amount [default: 100%] */
-  --background-image: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/background-synthwave.jpg"); /* app background image (link must be HTTPS) */
+  --background-image: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/background-synthwave.jpg?v=1.0.0"); /* app background image (link must be HTTPS) */
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size [default: cover] */
   --background-attachment: fixed; /* app background attachment [default: fixed] */
   --background-filter: saturate(1.3) brightness(0.85) contrast(1.2); /* synthwave filter effects */
   
   /* USER POPOUT BACKGROUND */
-  --user-popout-image: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/background-synthwave.jpg"); /* user popout background image [default: var(--background-image)] */
+  --user-popout-image: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/background-synthwave.jpg?v=1.0.0"); /* user popout background image [default: var(--background-image)] */
   --user-popout-position: var(--background-position); /* user popout position [default: var(--background-position)] */
   --user-popout-size: var(--background-size); /* user popout size [default: var(--background-size)] */
   --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
   --user-popout-filter: var(--background-filter); /* user popout background adjustments [default: var(--background-filter)] */
   
   /* USER MODAL BACKGROUND */
-  --user-modal-image: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/background-synthwave.jpg"); /* user modal background image [default: var(--background-image)] */
+  --user-modal-image: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/background-synthwave.jpg?v=1.0.0"); /* user modal background image [default: var(--background-image)] */
   --user-modal-position: var(--background-position); /* user modal position [default: var(--background-position)] */
   --user-modal-size: var(--background-size); /* user modal size [default: var(--background-size)] */
   --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
   --user-modal-filter: var(--background-filter); /* user modal background adjustments [default: var(--background-filter)] */
   
   /* HOME ICON - Animated Synthwave GIF */
-  --home-icon: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/home-icon.gif"); /* home button animated icon - synthwave retro effect [default: animated GIF] */
+  --home-icon: url("https://raw.githubusercontent.com/tshives26/discord-synthwave-dreams/main/assets/home-icon.gif?v=1.0.0"); /* home button animated icon - synthwave retro effect [default: animated GIF] */
   --home-size: cover; /* home button icon size [default: cover] */
   
   /* FONTS */
@@ -60,7 +60,7 @@
   --channel-normal: var(--interactive-text-default); /* channel text color [default: var(--interactive-text-default)] */
   --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
   --channel-hover: var(--interactive-text-hover); /* hovered channel text color [default: var(--interactive-text-hover)] */
-  --channel-selected: var(--interactive-text-active); /* selected channel text color [default: var(--interactive-text-active)] */
+  --channel-selected: #000000; /* selected channel text color - black for readability on bright backgrounds [default: #000000] */
   --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
   --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
   --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
