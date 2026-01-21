@@ -115,18 +115,3 @@
 }
 
 /* ADD ADDITIONAL SYNTHWAVE CSS BELOW HERE */
-
-/* Selected Channel Icons - Black for readability */
-[class*="channelSelected"] [class*="icon"],
-[class*="channelSelected"] svg,
-[class*="modeSelected"] [class*="icon"],
-[class*="modeSelected"] svg {
-  color: #000000 !important;
-}
-
-[class*="channelSelected"] [class*="icon"] path,
-[class*="modeSelected"] [class*="icon"] path,
-[class*="channelSelected"] svg path,
-[class*="modeSelected"] svg path {
-  fill: #000000 !important;
-}
