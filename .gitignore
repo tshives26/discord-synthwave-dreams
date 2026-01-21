@@ -26,3 +26,4 @@ assets/README.md
 # Keep assets folder but ignore README
 assets/**
 !assets/.gitkeep
+!assets/home-icon.gif
